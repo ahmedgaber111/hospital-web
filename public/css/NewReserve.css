@@ -1,0 +1,143 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input[type=time],
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    text-indent: 5px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=time]:focus,
+input[type=time]:hover,
+input[type=text]:hover,
+input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+form {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+select:hover {
+    background-color: #ddd;
+    outline: none;
+}
+
+.popup {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 75%;
+    width: 700px;
+    overflow: auto;
+    transform: translate(-50%, -50%);
+    background-color: #f2f2f2;
+    padding: 1px 3px;
+    font-family: "Poppins",
+        sans-serif;
+    border-radius: 20px;
+    text-align: left;
+}
+
+h2 {
+    /* position: center; */
+    /* margin-top: 00px; */
+    text-align: center;
+    font-style: italic;
+    padding: 2%;
+}
+
+h2,
+option {
+    font-weight: bold;
+    font-family: "Poppins",
+        sans-serif;
+    /* padding: 2%; */
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+select {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#container,
+.col-md-6,
+.form-group,
+#chos_from,
+.form-control,
+.clearfix {
+    padding: 16px;
+}
+
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 90%;
+}
+
+button {
+    background-color: #061b28;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* .cancelbtn,
+.createbtn {
+    float: left;
+    width: 50%;
+} */
+
+@media screen and (max-width: 300px) {
+
+    .cancelbtn,
+    .createbtn {
+        width: 100%;
+    }
+}

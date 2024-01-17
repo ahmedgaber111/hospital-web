@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-compatible" contact="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Time</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="3448513.png">
+        <link rel="stylesheet" href="AddTime.css">
+    </head>
+    <body>
+        <div class="popup" id="settime">
+            <h2>set up new date and time</h2>
+            <hr>
+            <form action="">
+                <label for="day"><b>Select the day</b></label>
+                <select name="day" id="day" required>
+                    <option value="none" selected>-- Select Day --</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                </select>
+                <div>
+                    <label for="ftime"><b>Time from</b></label>
+                    <input type="time" name="ftime" placeholder="From" required>
+                    <label for="ttime"><b>Time to</b></label>
+                    <input type="time" name="ttime" placeholder="To" required>
+                </div>
+                <br><br>
+                <button type="submit" class="submitbtn">Submit</button>
+                <button type="button" class="cancelbtn">Cancle</button>
+            </form>
+        </div>
+    </body>
+</html>

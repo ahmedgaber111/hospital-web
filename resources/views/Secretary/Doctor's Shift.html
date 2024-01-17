@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" contact="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Select Doctor's shift</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="3448513.png">
+    <link rel="stylesheet" href="Doctor's Shift.css">
+</head>
+
+<body>
+    <div class="popup" id="selectdoctor">
+        <h2>Choose The Doctor whose shift is about to start</h2>
+        <hr>
+        <form action="">
+            <label for="Specialist"><b>Select the Specialization</b></label>
+            <select name="Specialist" id="Specialist" required>
+                <option value="none" selected>-- Select the Specialization --</option>
+                <option value="Dintistry">MaDintistryle</option>
+                <option value="Ear,Nose">Ear,Nose</option>
+            </select>
+            <hr>
+            <label for="Doctor"><b>Select the Doctor Name</b></label>
+            <select name="Doctor" id="Doctor" required>
+                <option value="none" selected>-- Select the Doctor Name --</option>
+                <option value="saturday">Dr Ahmed</option>
+                <option value="sunday">Dr Mahmoud</option>
+                <option value="monday">Dr Walid</option>
+            </select>
+            <hr>
+            <button type="submit" class="selectbtn">Select</button>
+            <button type="button" class="cancelbtn">Cancel</button>
+        </form>
+    </div>
+</body>
+
+</html>

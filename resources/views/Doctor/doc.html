@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" contact="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Doctor</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../../public/images/3448513.png">
+    <link rel="stylesheet" href="../../../public/css/doc.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <h2>
+            <div class="user-wrapper">
+                <div class="img">
+                    <img class="user_img" src="../../../public/images/Doc.png" width="30px" height="30px" alt="admin photo">
+                </div>
+                <h3 class="user" for="nav-toggle" style="font-family:Quicksand;">
+                    Welcome, Doctor!
+                </h3>
+            </div>
+        </h2>
+    </header>
+    <form action="" id="form">
+        <div class="page">
+                <div class="container">
+                    <div class="control">
+                        <div class="inputrow">
+                            <div class="btn">
+                                <button type="Submit" class="stbtn">Patient Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="container">
+                <div class="control">
+                    <hr>
+                    <div style="text-align:center">
+                        <span>
+                            <strong>
+                                <span style="font-size:large">
+                                    <h2>
+                                        Prescription Form
+                                    </h2>
+                                </span>
+                            </strong>
+                        </span>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="container">
+                <div class="control">
+                    <label data-role="label" id="minfo">Medication Details</label>
+                    <div class="inputrow" >
+                        <div class="dropdown">
+                            <label for="MedicineName">Medicine Name</label>
+                            <select name="MedicineName" id="MedName" title="other medicine options">
+                                <option value="none" selected>-- Medicine Name --</option>
+                                <option value="Asprin Protect 100 mg">Asprin Protect 100 mg</option>
+                                <option value="Concor 5 mg">Concor 5 mg</option>
+                                <option value="Aspocid 75 mg">Aspocid 75 mg</option>
+                                <option value="Plavix 75 mg">Plavix 75 mg</option>
+                                <option value="Crestor 10 mg">Crestor 10 mg</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inputrow">
+                        <div class="dropdown">
+                            <label for="reportid"></label>
+                            <select name="reportid" id="reportid" title="choose report id">
+                                <option value="none" selected>-- Report Id --</option>
+                                <option value="report 1">report 1</option>
+                                <option value="report 1">report 1</option>
+                                <option value="report 1">report 1</option>
+                                <option value="report 1">report 1</option>
+                                <option value="report 1">report 1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inputrow">
+                        <div class="intake">
+                            <label for="IntakeInterval">Intake Interval</label>
+                            <input type="text" name="IntakeInterval" placeholder="Intake" id="inTake" required> <b>Times per day</b>
+                        </div>
+                    </div>
+                    <div class="inputrow1">
+                        <div class="dropdown2">
+                            <label for="Dosage">Dosage</label>
+                            <input type="text" name="Dosage" placeholder="Dosage" id="Dos" required>
+                            <select name="Dosage" id="Dosage">
+                                <option value="none" selected>-- Capsule(s) --</option>
+                                <option value="Aspirins">Aspirins</option>
+                                <option value="Powder">Powder</option>
+                                <option value="Caplet">Caplet</option>
+                                <option value="Effervescent tablet">Effervescent tablet</option>
+                                <option value="Lozenges">Lozenges</option>
+                                <option value="Tablets">Tablets</option>
+                                <option value="Syrup">Syrup</option>
+                                <option value="Oral rinse">Oral rinse</option>
+                                <option value="Eye drops">Eye drops</option>
+                                <option value="Ampoule">Ampoule</option>
+                                <option value="Ointment">Ointment</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="inputrow">
+                        <div class="Date">
+                            <label for="Start">Start Intake Date</label>
+                            <input type="date" name="Start" placeholder="dd/mm/yyyy">
+                            <label for="End">End Intake Date</label>
+                            <input type="date" name="End" placeholder="dd/mm/yyyy">
+                        </div>
+                        <div class="btn">
+                            <button type="Submit" class="submitbtn" id="Submitbutton" onclick="medicine()">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="control">
+                    <label data-role="label" id="tinfo"><h3>Medical Test (Optional)</h3></label>
+                    <div class="inputrow">
+                        <div class="mtest">
+                            <label for="MedicineName">Medical Test Name</label><br>
+                            <div class="dropdown">
+                                <label for="testName">Test Name</label>
+                                <select name="testName" id="testName">
+                                    <option value="none" selected>-- Test Name --</option>
+                                    <option value="E.S.R">E.S.R</option>
+                                    <option value="Complete Urine Analysis">Complete Urine Analysis</option>
+                                    <option value="Complete Stool Analysis">Complete Stool Analysis</option>
+                                    <option value="A.S.O.T">A.S.O.T</option>
+                                    <option value="Blood Urea">Blood Urea</option>
+                                    <option value="TIBC">TIBC</option>
+                                </select>
+                            </div>
+                            <div class="btn">
+                                <button type="Submit" class="submitbtn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="control">
+                    <label data-role="label" id="rinfo"><h3>Medical Radiology (Optional)</h3></label>
+                    <div class="inputrow">
+                        <div class="mrad">
+                            <label for="MedicineName">Medicial Radiology Name</label><br>
+                            <div class="dropdown">
+                                <label for="radioName">Radiology Name</label>
+                                <select name="radioName" id="radioName">
+                                    <option value="none" selected>-- Radiology Name --</option>
+                                    <option value="Plain Film">Plain Film</option>
+                                    <option value="Mammography">Mammography</option>
+                                    <option value="X-ray">X-ray</option>
+                                    <option value="Plain Abdomen">Plain Abdomen</option>
+                                    <option value="Pharynx">Pharynx</option>
+                                    <option value="Infusion urography">Infusion urography</option>
+                                </select>
+                            </div>
+                            <div class="btn">
+                                <button type="Submit" class="submitbtn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <form action="" id="pres">
+        <div class="container">
+            <div class="control">
+                <div class="control">
+                    <hr>
+                    <div style="text-align:center">
+                        <span>
+                            <strong>
+                                <span style="font-size:large">
+                                    <h2>
+                                        Prescription Form
+                                    </h2>
+                                </span>
+                            </strong>
+                        </span>
+                    </div>
+                    <hr>
+                </div>
+                <div class="inputrow">
+                    <div class="fpresc" id="table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Medicine Name</td>
+                                    <td>Intake Intervals</td>
+                                    <td>Dosage (type)</td>
+                                    <td>Start</td>
+                                    <td>End</td>
+                                    <td>Remove</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Concor 5 mg</td>
+                                    <td>2</td>
+                                    <td>5ml Syrup</td>
+                                    <td>7/7/2022</td>
+                                    <td>15/7/2022</td>
+                                    <td>
+                                        <button type="button" id="remove_btn1">Remove</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+                <div class="inputrow">
+                    <div class="fpresc">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Medicine Test or Medical Radiology</td>
+                                    <td>Remove</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Blood Urea</td>
+                                    <td>
+                                        <button type="button" id="remove_btn">Remove</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="control">
+                <button class="submit" type="submit">
+                    <span class="normal-state">SUBMITE FORM</span>
+                </button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

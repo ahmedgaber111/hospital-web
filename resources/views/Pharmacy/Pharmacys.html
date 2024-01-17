@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Hospital_Pharmacy</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-compatible" contact="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/pharmacy.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/3448513.png" />
+  </head>
+  <body>
+    <header>
+      <h2>
+        <div class="user-wrapper">
+          <div class="img">
+            <img
+              class="user_img"
+              src="images/883356%20(1).png"
+              width="30px"
+              height="30px"
+              alt="admin photo"
+            />
+          </div>
+          <h4 class="user">Welcome,Pharmatist</h4>
+        </div>
+      </h2>
+    </header>
+    <main>
+      <div class="nnn">
+     <div class="search-wrapper">
+      <span class="las la-search"></span>
+      <input type="search" placeholder="Search here" />
+        </div></div>
+
+      <div class="cards">
+     <div class="card-single" >
+      <button type="button"onclick="" class="las la-plus" id="btn333">
+        ADD MEDICEN
+    </button>
+   </div></div>
+   <div class="card-body">
+    <table width="75%">
+      <thead><tr><td class="ggg">Medication List</td></tr></thead>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Quantity</td>
+                <td>Price</td>
+                <td>Type</td>
+                <td>status</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td><img src="images/pb.jpg" style="width: 50px;height: 50px; border-radius: 30px;">&nbsp;&nbsp; Panadol Advance</td>
+            <td>120</td>
+            <td>78LE</td>
+            <td> Pills</td>
+            <td>Active</td>
+            <td class="bv"><button onclick="add()" class="las la-edit" style=" background-color: rgb(135, 228, 152);
+              color:rgb(6, 128, 65);
+              font-size: 1.1rem;
+               cursor: pointer;  border-color:rgb(6, 128, 65);"></button>
+                <button class="las la-times" style="background-color: rgb(245, 157, 157);
+                color: rgb(241, 5, 5);
+                font-size: 1.1rem;
+                border-color:rgb(241, 5, 5);
+                cursor: pointer;"></button></td>
+             </tr>
+             <td> <img src="images/pr.jpg" style="width: 50px;height: 50px; border-radius: 30px;">&nbsp;&nbsp; Panadol Extra</td>
+             <td>160</td>
+             <td>23LE</td>
+             <td> Pills</td>
+             <td>Active</td>
+             <td class="bv"><button onclick="add()" class="las la-edit" style=" background-color: rgb(135, 228, 152);
+              color:rgb(6, 128, 65);
+              font-size: 1.1rem;
+               cursor: pointer;  border-color:rgb(6, 128, 65) ;"></button>
+                <button class="las la-times" style="background-color: rgb(245, 157, 157);
+                color: rgb(241, 5, 5);
+                font-size: 1.1rem;
+                border-color:rgb(241, 5, 5);
+                cursor: pointer;"></button></td>
+              </tr>
+              <td> <img src="images/hemo.jpg" style="width: 50px;height: 50px; border-radius: 10px;"> &nbsp;&nbsp;Hemoclar</td>
+              <td>300</td>
+              <td>35LE</td>
+              <td>Cream</td>
+              <td>Active</td>
+              <td class="bv"><button onclick="add()" class="las la-edit" style=" background-color: rgb(135, 228, 152);
+                color:rgb(6, 128, 65);
+                font-size: 1.1rem;
+                 cursor: pointer;  border-color:rgb(6, 128, 65);"></button>
+                  <button class="las la-times" style="background-color: rgb(245, 157, 157);
+                  color: rgb(241, 5, 5);
+                  font-size: 1.1rem;
+                  border-color:rgb(241, 5, 5);
+                  cursor: pointer;"></button></td>
+               </tr>
+               <td> <img src="images/5-1.jpg" style="width: 50px;height: 50px; border-radius: 10px;">&nbsp;&nbsp;Melga Advance</td>
+               <td>200</td>
+               <td>60LE</td>
+               <td>Pills</td>
+               <td>Active</td>
+               <td class="bv"><button onclick="add()" class="las la-edit" style=" background-color: rgb(135, 228, 152);
+                color:rgb(6, 128, 65);
+                font-size: 1.1rem;
+                 cursor: pointer;  border-color:rgb(6, 128, 65)"></button>
+                  <button class="las la-times" style="background-color: rgb(245, 157, 157);
+                  color: rgb(241, 5, 5);
+                  font-size: 1.1rem;
+                  border-color:rgb(241, 5, 5);
+                  cursor: pointer;"></button></td>
+                </tr>
+                <td> <img src="images/k%20p.jpg" style="width: 50px;height: 50px; border-radius: 30px;">&nbsp;&nbsp;Ketofan</td>
+                <td>100</td>
+                <td>37LE</td>
+                <td>Pills</td>
+                <td>Active</td>
+                <td class="bv"><button onclick="add()" class="las la-edit" style=" background-color: rgb(135, 228, 152);
+                  color:rgb(6, 128, 65);
+                  font-size: 1.1rem;
+                   cursor: pointer;  border-color:rgb(6, 128, 65)"></button>
+                    <button class="las la-times" style="background-color: rgb(245, 157, 157);
+                    color: rgb(241, 5, 5);
+                    font-size: 1.1rem;
+                    border-color:rgb(241, 5, 5);
+                    cursor: pointer;"></button></td>
+                 </tr>
+                 <td> <img src="images/olv.jpg" style="width: 50px;height: 50px; border-radius: 30px;">&nbsp;&nbsp;Olvent</td>
+                 <td>200</td>
+                 <td>10LE</td>
+                 <td>Liquid</td>
+                 <td>Active</td>
+                 <td class="bv"><button onclick="add()"  class="las la-edit" style=" background-color: rgb(135, 228, 152);
+                  color:rgb(6, 128, 65);
+                  font-size: 1.1rem;
+                   cursor: pointer;  border-color:rgb(6, 128, 65)"></button>
+                    <button class="las la-times" style="background-color: rgb(245, 157, 157);
+                    color: rgb(241, 5, 5);
+                    font-size: 1.1rem;
+                    border-color:rgb(241, 5, 5);
+                    cursor: pointer;"></button></td>
+                  </tr>
+                  <td> <img src="images/hemo.jpg" style="width: 50px;height: 50px; border-radius: 30px;">&nbsp;&nbsp;Devarol</td>
+                  <td>100</td>
+                  <td>60LE</td>
+                  <td style="padding-left:25px ;">----</td>
+                  <td>Active</td>
+                  <td class="bv"><button onclick="add()" class="las la-edit" style=" background-color: rgb(135, 228, 152);
+                    color:rgb(6, 128, 65);
+                    font-size: 1.1rem;
+                     cursor: pointer;  border-color:rgb(6, 128, 65)"></button>
+                      <button class="las la-times" style="background-color: rgb(245, 157, 157);
+                      color: rgb(241, 5, 5);
+                      font-size: 1.1rem;
+                      border-color:rgb(241, 5, 5);
+                      cursor: pointer;"></button></td>
+                   </tr>
+                   <td> <img src="images/ct.jpg" style="width: 50px;height: 50px; border-radius: 30px;">&nbsp;&nbsp;Cotton</td>
+                   <td>400</td>
+                   <td>27.5LE</td>
+                   <td style="padding-left:25px ;">----</td>
+                   <td>Active</td>
+                   <td class="bv"><button onclick="add()" class="las la-edit" style=" background-color: rgb(135, 228, 152);
+                    color:rgb(6, 128, 65);
+                    font-size: 1.1rem;
+                     cursor: pointer;  border-color:rgb(6, 128, 65)"></button>
+                      <button class="las la-times" style="background-color: rgb(245, 157, 157);
+                      color: rgb(241, 5, 5);
+                      font-size: 1.1rem;
+                      border-color:rgb(241, 5, 5);
+                      cursor: pointer;"></button></td>
+                    </tr>
+                    <td> <img src="images/sh.jpg" style="width: 50px;height: 50px; border-radius: 30px;">&nbsp;&nbsp;Shash</td>
+              <td>260</td>
+              <td>10LE</td>
+              <td style="padding-left:25px ;">----</td>
+              <td>Active</td>
+              <td class="bv"><button onclick="add()" class="las la-edit" style=" background-color: rgb(135, 228, 152);
+                color:rgb(6, 128, 65);
+                font-size: 1.1rem;
+                 cursor: pointer;  border-color:rgb(6, 128, 65)"></button>
+                  <button class="las la-times" style="background-color: rgb(245, 157, 157);
+                  color: rgb(241, 5, 5);
+                  font-size: 1.1rem;
+                  border-color:rgb(241, 5, 5);
+                  cursor: pointer;"></button></td>
+               </tr>
+               <td> <img src="images/rm.jpg" style="width: 50px;height: 50px; border-radius: 30px;">&nbsp;&nbsp;Repiral gel</td>
+               <td>260</td>
+               <td>15LE</td>
+               <td style="padding-left:25px ;">Cream</td>
+               <td>Active</td>
+               <td class="bv"><button onclick="" class="las la-edit" style=" background-color: rgb(135, 228, 152);
+                 color:rgb(6, 128, 65);
+                 font-size: 1.1rem;
+                  cursor: pointer;  border-color:rgb(6, 128, 65)"></button>
+                   <button class="las la-times" style="background-color: rgb(245, 157, 157);
+                   color: rgb(241, 5, 5);
+                   font-size: 1.1rem;
+                   border-color:rgb(241, 5, 5);
+                   cursor: pointer;"></button></td>
+                </tr>
+              </tbody></table></div> </main>
+     <!----<footer class="xxx">
+            <button class="logout" type="submit">Log out</button>
+
+    </footer>-->
+    <footer>
+      <div class="container">
+          <button class="logout" type="submit">Log out</button>
+      </div>
+  </footer>
+    <script src="js/pharmacy.js"></script>
+  </body>
+</html>

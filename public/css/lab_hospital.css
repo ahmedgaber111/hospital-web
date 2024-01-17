@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    box-shadow: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: " poppins", sans-serif;
+  }
+  header {
+    padding: 1rem;
+    position: fixed;
+    display: flex;
+    top: 0px;
+    z-index: 100;
+    background-color:#eceff1;
+    justify-content:center;
+  }
+  img{
+width:60px;
+margin-left: 4rem;
+  }
+  .nnn {
+    padding-top: 150px;
+    justify-content: center;
+    margin-left:38%;
+  }
+  .search-wrapper {
+    border: 2px solid #01304a;
+    border-radius: 30px;
+    height: 50px;
+    width: 350px;
+    background-color: #fff;
+  }
+  .search-wrapper span {
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+    color: #01304a;
+  }
+  .search-wrapper input {
+    height: 100%;
+    padding: 0.3rem;
+    border: none;
+    outline: none;
+  }
+  .main-cont{
+    padding-left:10rem ;
+    padding-right: 10rem;
+    margin-top:1.3rem;
+  }
+ .content table{width: 100%;}
+ 
+.header.activated {
+  box-shadow: 0 1px .5rem #252830;
+  background-color: #eceff1;
+}
+.card {
+  border-color: white;
+  margin-left: 33.5rem;
+  cursor: pointer;
+  width: 28%;
+  border-radius:10rem;
+  text-align: center;
+  display: inline-table;
+  margin-top: 1rem;
+
+}
+.card-single {
+  border-radius: 10rem;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 2rem;
+  margin: 0.2rem;
+  font-weight: bold;
+  font-size:1.5rem;
+  justify-content: center;
+}
+#btnc{
+  background: #fff;
+  border-radius: 10px;
+  color: #01304a;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border: transparent;
+  width: max-content;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 1.3rem;
+}
+#btnc:hover {
+  background-color: #003d5e3d;
+}
+#logout:hover {
+  background-color: #061b28;
+  color: white;
+}
+.container:hover{
+  background-color: #f1f5f9;
+}
+#logout {
+  margin-top: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  color: #01304a;
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+  border: transparent;
+}
+#logout {
+  padding: 14px 20px;
+  cursor: pointer;
+  width:100%;
+  height: 100%;
+  opacity: 100%;
+  font-weight: bold;
+  font-size: 17px;
+  text-align: center;
+  position: static;
+  border: none;
+}
+ .add_content{
+   background-color: #eceff1;
+   border-collapse: separate;
+   border-radius: 15px;
+   margin-top: 15rem;
+ }
+ .add_content table{
+   width: 100%;
+   justify-content: center;
+ }
+ .add_content input[type="text"]{
+   width: 150px;
+  border-radius: 2rem;}
+  .zaza{
+    background-color:#eceff1;
+    width:1020px ;
+    height: 260px;
+    border-radius: 2rem;
+    color: #01304a;
+   padding-top: 2rem;
+   padding-left: 5rem;
+    justify-content: center;
+  
+    
+  }
+  .zaza span{
+    font-size: 1.5rem;
+  }
+  .zaza table{
+    padding-top: 0.9rem;
+    justify-content: space-between;
+    margin: 0.4rem;
+     text-anchor:white ;
+  }
+  .ddi{
+    padding-left: 4rem;
+  }
+  .zaza td{
+    margin: 2rem;
+    padding-top:1.5rem;
+    font-size: 1.1rem;
+  }
+  .zaza tr td{
+    text-align: center;
+  }
+  .zaza input[type="text"]{
+  width: 120px;
+  border-radius: 9px;
+  border: none;
+  }
+  .lol{
+    padding-top: 1.5rem;
+  padding-left: 50rem;
+  }
+  .zaza button{
+    border: none;
+    width: 100px;
+    font-size: 1rem;
+    background: #16cb349f;
+    border-radius: 9px;
+    height: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .edt{
+   top:25%;
+   left:15%;
+    justify-content: center;
+    position: absolute;
+  }
+   .zaza input[type="text"]:hover {
+    background-color:rgb(250, 249, 249);
+    opacity: 1;
+  }
+  
+  
+  .la_cont{
+    width:550px;
+    height: 350px;
+    background-color:#dfe5eaf3;
+    border-radius: 2rem;
+    margin-left:30rem;
+    margin-right: 20;
+    top: 0;
+    left:10%;
+    position: absolute;
+   transform: translate(-50px,-50px) scale(0.1);
+   visibility: hidden;
+   transition: transform 0.4s ,top 0.4s;
+  }
+  .cov{
+    transform: translate(-50px,-50px) scale(1);
+      visibility: visible;
+      top:40%;
+      left:5%;
+    }
+  .laaa{
+    font-size: 1.2rem;
+    color: #01304a;
+    padding-top:1.2rem;
+    padding-left: 3.4rem;
+  }
+  hr{
+    color: #01304a;
+    font-weight: bold;
+  }
+  .rep{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns:45% auto;
+  }
+  .contr select{
+    border-radius:2rem;
+    width: 46%;
+    height: 70%;
+    text-align: center;
+    border: 2px solid #01304a;
+    color: #01304a;
+    font-size: 1.001rem;
+  }
+  .contr1 select{
+    border-radius: 2rem;
+    width: 50%;
+    height: 70%;
+    text-align: center;
+    border: 2px solid #01304a;
+    color: #01304a;
+    font-size: 1.001rem;
+  }
+  .contr label,.contr1 label{
+color: #01304a;
+font-size: 1.2rem;
+  }
+.custom-file{
+  background-color: white;
+  
+}
+  #ko{
+    padding-top: 3rem;
+    padding-left: 27.5rem;
+  }
+  .ohh{
+    padding-left: 23rem;
+    cursor: pointer;
+  }
+  .fi{
+    padding-left: 5.2rem;
+    padding-top: 3rem;
+    width:450px;
+  }
+  #ree{
+    margin-top: 7.5rem;
+    margin-left: 11rem;
+    display:grid;
+    grid-gap:1rem;
+    grid-template-columns: 160% auto;
+  }
+  #ree textarea{
+    width: 320px;
+    border-color: #01304a;
+  }
+  #ree label{
+    padding-top: 3.3rem;
+    font-size: 1.2rem;
+    color: #01304a;
+  }
+  #btnss{
+    padding-top: 3.2rem;
+    padding-left: 25rem;
+  }
+  .addod{
+    position: absolute;
+    top:0;
+    left:20%;
+    width:660px;
+    background-color: #dfe5eadc;
+    border-radius: 10px;
+    transform: translate(-50px,-50px) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s ,top 0.4s;
+  }
+  
+  .open-popup{
+  transform: translate(-50px,-50px) scale(1);
+    visibility: visible;
+    top:40%;
+    left:28%;
+  }
+  .Close-btn{
+    cursor: pointer;
+    font-size: 1.4rem;
+    padding-top: 1.3rem; padding-left: 39rem;
+  }
+  #koki{
+  padding-left: 35rem;
+  padding-bottom: 1rem;
+  }
+  .dod{
+    padding:0.99rem;
+  }
+  .addod table input[type="text"]{
+    width: 95px;
+    border: 2px solid #061b28;
+  }
+  .addod table input[type="file"]{
+    width: 95px;
+  }
+
